@@ -355,7 +355,9 @@ def get_context_graph2(subgraph, id2relation, max_paths = 200, max_path_len = 3,
 
     return cg_dgl
 
+## 专门从挖掘的子图哪里获得上下文图的部分 所以要确定相应的子图路径
 def view_dataset():  # 原始dataset
+    ## 这里应该是要修改数据集路径  运行终端报错出现乱码 不懂为什么 
     data_path = '/data/linqika/2021project/InductiveKG/data/nell_v2/subgraphs_en_True_neg_1_hop_3/'
     file_paths = {
         'train': '/data/linqika/2021project/InductiveKG/data/nell_v2/train.txt',
